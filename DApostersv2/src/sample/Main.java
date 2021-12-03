@@ -14,6 +14,8 @@ public class Main extends Application {
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
+        Scene scene = null;
+        scene.getStylesheets().add(0,"styles/scrollbar.css");
     }
 
 

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane stylesheets="../styles/scrollbar.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #693963;" styleClass="background" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="67.0" layoutY="34.0" text="DAposter" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Baskerville Old Face" size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="105.0" layoutY="129.0" text="Library" textFill="#ffc700">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ScrollBar layoutX="424.0" layoutY="210.0" opacity="0.6" orientation="VERTICAL" prefHeight="381.0" prefWidth="20.0" style="-fx-border-color: #ffffff; -fx-border-radius: 20;" />
+      <Label layoutX="594.0" layoutY="129.0" text="My library" textFill="#dc624a">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="789.0" layoutY="80.0" text="Hello,name" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="68.0" layoutY="177.0" prefHeight="459.0" prefWidth="388.0" style="-fx-background-color: #a95177; -fx-background-radius: 50;">
+         <children>
+            <ScrollBar layoutX="220.0" layoutY="130.0" orientation="VERTICAL" stylesheets="@../styles/scrollbar.css">
+               <styleClass>
+                  <String fx:value="-webkit-scrollbar-thumb" />
+                  <String fx:value="-webkit-scrollbar" />
+               </styleClass>
+            </ScrollBar>
+         </children></AnchorPane>
+      <AnchorPane layoutX="551.0" layoutY="182.0" prefHeight="459.0" prefWidth="388.0" style="-fx-background-color: #a95177; -fx-background-radius: 50;" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

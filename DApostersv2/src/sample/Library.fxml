@@ -47,12 +47,28 @@
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4c4c4" height="100.0" layoutX="261.0" layoutY="285.0" stroke="TRANSPARENT" strokeType="INSIDE" width="80.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4c4c4" height="100.0" layoutX="154.0" layoutY="335.0" stroke="TRANSPARENT" strokeType="INSIDE" width="80.0" />
          </children></AnchorPane>
-      <AnchorPane layoutX="559.0" layoutY="182.0" prefHeight="459.0" prefWidth="388.0" style="-fx-background-color: #a95177; -fx-background-radius: 50;">
+      <AnchorPane layoutX="559.0" layoutY="192.0" prefHeight="459.0" prefWidth="388.0" style="-fx-background-color: #a95177; -fx-background-radius: 50;">
          <children>
+<<<<<<< HEAD:DApostersv2/src/sample/library.fxml
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4c4c4" height="100.0" layoutX="168.0" layoutY="31.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4c4c4" height="100.0" layoutX="285.0" layoutY="93.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4c4c4" height="100.0" layoutX="50.0" layoutY="93.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+            <ImageView accessibleRole="BUTTON" fitHeight="100.0" fitWidth="80.0" layoutX="168.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/add%20you%20afisha.png" />
+               </image>
+            </ImageView>
+            <ImageView accessibleRole="BUTTON" fitHeight="100.0" fitWidth="80.0" layoutX="168.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/add%20new%20poster.png" />
+               </image>
+            </ImageView>
+=======
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4c4c4" height="100.0" layoutX="168.0" layoutY="31.0" stroke="TRANSPARENT" strokeType="INSIDE" width="80.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4c4c4" height="100.0" layoutX="285.0" layoutY="93.0" stroke="TRANSPARENT" strokeType="INSIDE" width="80.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4c4c4" height="100.0" layoutX="50.0" layoutY="93.0" stroke="TRANSPARENT" strokeType="INSIDE" width="80.0" />
             <Button layoutX="142.0" layoutY="263.0" mnemonicParsing="false" onAction="#switch_to_Generation" text="Button" />
+>>>>>>> 42f503a4dc97ac86c22a248ce1bb851dc64f503a:DApostersv2/src/sample/Library.fxml
          </children>
       </AnchorPane>
            <Button fx:id="exit_the_program" layoutX="914.0" layoutY="641.0" mnemonicParsing="false" onAction="#exit_the_program" prefHeight="44.0" prefWidth="80.0" style="-fx-background-radius: 10px; -fx-background-color: #693963;" text="Exit" textFill="#dc624a">

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #693963; -fx-background-radius: 15px;" styleClass="background" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="67.0" layoutY="34.0" text="DAposter" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Risque-Regular" size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="813.0" layoutY="59.0" text="Hello," textFill="WHITE">
+         <font>
+            <Font name="Roboto" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="exit_the_program" layoutX="914.0" layoutY="641.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="80.0" style="-fx-background-radius: 10px; -fx-background-color: #693963;" text="Exit" textFill="#dc624a">
+         <font>
+            <Font name="Roboto" size="24.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="75.0" layoutY="142.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: C4C4C4; -fx-background-radius: 15px;">
+         <children>
+            <Text fill="#ffc700" layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Text align">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <CheckBox fx:id="chek_text_align" layoutX="150.0" layoutY="119.0" mnemonicParsing="false" />
+            <CheckBox fx:id="chek_text_align" layoutX="92.0" layoutY="119.0" mnemonicParsing="false" />
+            <CheckBox fx:id="chek_text_align" layoutX="33.0" layoutY="119.0" mnemonicParsing="false" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="75.0" layoutY="328.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: C4C4C4; -fx-background-radius: 15px;">
+         <children>
+            <Text fill="#dc624a" layoutX="14.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Text shape">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <CheckBox fx:id="chek_text_shape" layoutX="29.0" layoutY="117.0" mnemonicParsing="false" />
+            <CheckBox fx:id="chek_text_shape" layoutX="92.0" layoutY="117.0" mnemonicParsing="false" />
+            <CheckBox fx:id="chek_text_shape" layoutX="148.0" layoutY="117.0" mnemonicParsing="false" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="75.0" layoutY="514.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: C4C4C4; -fx-background-radius: 15px;">
+         <children>
+            <Text fill="#ffc700" layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Text placement">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <CheckBox fx:id="chek_text_placement" layoutX="28.0" layoutY="119.0" mnemonicParsing="false" />
+            <CheckBox fx:id="chek_text_placement" layoutX="92.0" layoutY="119.0" mnemonicParsing="false" />
+            <CheckBox fx:id="chek_text_placement" layoutX="149.0" layoutY="119.0" mnemonicParsing="false" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="325.0" layoutY="141.0" prefHeight="338.0" prefWidth="350.0" style="-fx-background-color: C4C4C4; -fx-background-radius: 15px;">
+         <children>
+            <Text fill="#dc624a" layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Background color">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9ba0a4" height="100.0" layoutX="33.0" layoutY="72.0" stroke="TRANSPARENT" strokeType="INSIDE" width="80.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9ba0a4" height="100.0" layoutX="135.0" layoutY="72.0" stroke="TRANSPARENT" strokeType="INSIDE" width="80.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9ba0a4" height="100.0" layoutX="240.0" layoutY="72.0" stroke="TRANSPARENT" strokeType="INSIDE" width="80.0" />
+            <CheckBox fx:id="background_color_chek" layoutX="65.0" layoutY="187.0" mnemonicParsing="false" />
+            <CheckBox fx:id="background_color_chek" layoutX="167.0" layoutY="187.0" mnemonicParsing="false" />
+            <CheckBox fx:id="background_color_chek" layoutX="272.0" layoutY="187.0" mnemonicParsing="false" />
+            <ColorPicker layoutX="137.0" layoutY="243.0" prefHeight="29.0" prefWidth="175.0" />
+            <CheckBox fx:id="background_color_chek" layoutX="69.0" layoutY="249.0" mnemonicParsing="false" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="734.0" layoutY="142.0" prefHeight="363.0" prefWidth="200.0" style="-fx-background-color: C4C4C4; -fx-background-radius: 15px;">
+         <children>
+            <Text fill="#dc624a" layoutX="30.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Words">
+               <font>
+                  <Font name="Roboto" size="30.0" />
+               </font>
+            </Text>
+            <TextField layoutX="14.0" layoutY="64.0" prefHeight="30.0" prefWidth="173.0" promptText="Name" style="-fx-background-color: 92d0d0;">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="14.0" layoutY="103.0" prefHeight="30.0" prefWidth="173.0" promptText="main word">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Button layoutX="12.0" layoutY="319.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="178.0" style="-fx-background-radius: 15px;" text="+Add word" textFill="#a95177">
+               <font>
+                  <Font name="Roboto" size="12.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <Button fx:id="generate" layoutX="734.0" layoutY="541.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: A95177; -fx-background-radius: 15px;" text="Generate" textFill="WHITE">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="327.0" layoutY="514.0" prefHeight="150.0" prefWidth="350.0" style="-fx-background-color: C4C4C4; -fx-background-radius: 15px;">
+         <children>
+            <Text fill="#ffc700" layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Poster format">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <CheckBox fx:id="chek_text_placement" layoutX="31.0" layoutY="58.0" mnemonicParsing="false" text="format A4 (297 x 210 мм)" textFill="#a95177">
+               <font>
+                  <Font name="Roboto" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chek_text_placement" layoutX="33.0" layoutY="103.0" mnemonicParsing="false" text="format A3(420 x 297 мм)" textFill="#a95177">
+               <font>
+                  <Font name="Roboto" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chek_text_placement1" layoutX="194.0" layoutY="58.0" mnemonicParsing="false" text="format A2(594 x 420 мм) " textFill="#a95177">
+               <font>
+                  <Font name="Roboto" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chek_text_placement11" layoutX="194.0" layoutY="103.0" mnemonicParsing="false" text="square(210 x 210 мм)" textFill="#a95177" />
+         </children>
+      </AnchorPane>
+      <Accordion />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

@@ -105,4 +105,15 @@ public class Controller {
         stage.show();
     }
 
+    public void exit_the_program(javafx.event.ActionEvent event) throws IOException {
+        //Parent root = FXMLLoader.load(getClass().getResource("Viewing.fxml"));
+        //stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+       // scene = new Scene(root);
+        //stage.setScene(scene);
+        //stage.show();
+        System.exit(0);
     }
+
+
+
+}

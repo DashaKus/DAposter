@@ -50,7 +50,7 @@
             <TextField fx:id="user_login" layoutX="41.0" layoutY="100.0" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: A95177; -fx-background-radius: 10px;" />
          </children>
       </AnchorPane>
-      <Button fx:id="exit_the_program" layoutX="906.0" layoutY="641.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="80.0" style="-fx-background-radius: 10px; -fx-background-color: #693963;" text="Exit" textFill="#dc624a">
+      <Button fx:id="exit_the_program" layoutX="906.0" layoutY="641.0" mnemonicParsing="false" onAction="#exit_the_program" prefHeight="44.0" prefWidth="80.0" style="-fx-background-radius: 10px; -fx-background-color: #693963;" text="Exit" textFill="#dc624a">
          <font>
             <Font name="Roboto" size="24.0" />
          </font>

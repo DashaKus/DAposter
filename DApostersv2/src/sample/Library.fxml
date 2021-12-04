@@ -71,7 +71,7 @@
 >>>>>>> 42f503a4dc97ac86c22a248ce1bb851dc64f503a:DApostersv2/src/sample/Library.fxml
          </children>
       </AnchorPane>
-           <Button fx:id="exit_the_program" layoutX="914.0" layoutY="641.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="80.0" style="-fx-background-radius: 10px; -fx-background-color: #693963;" text="Exit" textFill="#dc624a">
+           <Button fx:id="exit_the_program" layoutX="914.0" layoutY="641.0" mnemonicParsing="false" onAction="#exit_the_program" prefHeight="44.0" prefWidth="80.0" style="-fx-background-radius: 10px; -fx-background-color: #693963;" text="Exit" textFill="#dc624a">
          <font>
             <Font name="Roboto" size="24.0" />
          </font>

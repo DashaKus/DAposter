@@ -14,7 +14,8 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane accessibleRole="IMAGE_VIEW" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #693963;" styleClass="background" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #693963;" styleClass="background" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Label layoutX="67.0" layoutY="34.0" text="DAposter" textFill="WHITE" wrapText="true">
          <font>
@@ -26,7 +27,7 @@
             <Font name="Roboto" size="24.0" />
          </font>
       </Label>
-      <Button fx:id="exit_the_program" layoutX="914.0" layoutY="641.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="80.0" style="-fx-background-radius: 10px; -fx-background-color: #693963;" text="Exit" textFill="#dc624a">
+      <Button fx:id="exit_the_program" layoutX="914.0" layoutY="641.0" mnemonicParsing="false" onAction="#exit_the_program" prefHeight="44.0" prefWidth="80.0" style="-fx-background-radius: 10px; -fx-background-color: #693963;" text="Exit" textFill="#dc624a">
          <font>
             <Font name="Roboto" size="24.0" />
          </font>
@@ -168,7 +169,7 @@
                </font>
             </Button>
          </children></AnchorPane>
-      <Button fx:id="generate" layoutX="734.0" layoutY="541.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: A95177; -fx-background-radius: 15px;" text="Generate" textFill="WHITE">
+      <Button fx:id="generate" layoutX="734.0" layoutY="541.0" mnemonicParsing="false" onAction="#switch_to_Viewing" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: A95177; -fx-background-radius: 15px;" text="Generate" textFill="WHITE">
          <font>
             <Font name="Roboto" size="18.0" />
          </font>

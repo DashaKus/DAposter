@@ -6,7 +6,9 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<fx:root prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #693963;" type="AnchorPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<fx:root prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #693963;"
+         type="AnchorPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="Controllers.Controller">
    <children>
       <Label layoutX="28.0" layoutY="25.0" text="DAposter" textFill="WHITE" wrapText="true">
          <font>

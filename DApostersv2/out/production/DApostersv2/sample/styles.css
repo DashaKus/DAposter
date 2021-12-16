@@ -1,0 +1,7 @@
+.scroll-pane > .viewport{
+-fx-background-color:  #a95177;
+-fx-background-radius: 50 px;
+}
+.button :hover {
+-fx-text-fill: #18D8C9 ;
+}

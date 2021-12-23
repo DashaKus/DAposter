@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.lang.String?>
-<?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
@@ -13,7 +12,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #693963;" styleClass="background" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #693963;" styleClass="background" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LibraryController">
    <children>
       <Label layoutX="67.0" layoutY="34.0" text="DAposter" textFill="WHITE" wrapText="true">
          <font>
@@ -37,11 +36,7 @@
       </Label>
       <AnchorPane layoutX="559.0" layoutY="182.0" prefHeight="459.0" prefWidth="388.0" style="-fx-background-color: #a95177; -fx-background-radius: 50;">
          <children>
-            <ScrollPane hbarPolicy="NEVER" hvalue="0.11" layoutX="18.0" layoutY="22.0" prefHeight="415.0" prefWidth="353.0" style="-fx-background-radius: 50; -fx-background-color: #a95177;">
-               <stylesheets>
-                  <URL value="@../sample/styles.css" />
-                  <URL value="@../sample/scrollbar.css" />
-               </stylesheets>
+            <ScrollPane fx:id="my_scroll" hbarPolicy="NEVER" hvalue="0.11" layoutX="18.0" layoutY="22.0" prefHeight="415.0" prefWidth="353.0" style="-fx-background-radius: 50; -fx-background-color: #a95177;" stylesheets="@../sample/styles.css">
                <styleClass>
                   <String fx:value="scroll-pane" />
                   <String fx:value="viewport" />
@@ -49,7 +44,7 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="409.0" prefWidth="336.0" style="-fx-background-radius: 50 px; -fx-background-color: #a9517700;">
                      <children>
-                        <GridPane alignment="CENTER" prefHeight="100.0" prefWidth="80.0">
+                        <GridPane fx:id="my_grid" alignment="CENTER" prefHeight="100.0" prefWidth="80.0">
                            <columnConstraints>
                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                            </columnConstraints>
@@ -70,15 +65,11 @@
       </Button>
       <AnchorPane layoutX="67.0" layoutY="182.0" prefHeight="459.0" prefWidth="388.0" style="-fx-background-color: #a95177; -fx-background-radius: 50;">
          <children>
-            <ScrollPane hbarPolicy="NEVER" hvalue="0.11" layoutX="18.0" layoutY="22.0" prefHeight="415.0" prefWidth="353.0" style="-fx-background-radius: 50; -fx-background-color: #a95177;">
-               <stylesheets>
-                  <URL value="@../sample/styles.css" />
-                  <URL value="@../sample/scrollbar.css" />
-               </stylesheets>
+            <ScrollPane fx:id="lib_scroll" hbarPolicy="NEVER" hvalue="0.11" layoutX="18.0" layoutY="22.0" prefHeight="415.0" prefWidth="353.0" style="-fx-background-radius: 50; -fx-background-color: #a95177;" stylesheets="@../sample/styles.css">
                <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="411.0" prefWidth="338.0" style="-fx-background-radius: 50 px; -fx-background-color: #a9517700;">
                      <children>
-                        <GridPane alignment="CENTER" layoutX="-2.0" prefHeight="100.0" prefWidth="80.0">
+                        <GridPane fx:id="lib_grid" alignment="CENTER" layoutX="-2.0" prefHeight="100.0" prefWidth="80.0">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                           </columnConstraints>
@@ -101,7 +92,7 @@
             </ScrollPane>
          </children>
       </AnchorPane>
-      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="479.0" layoutY="87.0" mnemonicParsing="false" onAction="#switch_to_Generation" prefHeight="100.0" prefWidth="80.0" style="-fx-background-color: #a95177; -fx-border-color: #ffffff;" styleClass="custom-dashed-border" stylesheets="@../sample/styles.css" text="+" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="toGenerate" alignment="CENTER" contentDisplay="CENTER" layoutX="479.0" layoutY="87.0" mnemonicParsing="false" onAction="#switch_to_Generation" prefHeight="100.0" prefWidth="80.0" style="-fx-background-color: #a95177; -fx-border-color: #ffffff;" styleClass="custom-dashed-border" stylesheets="@../sample/styles.css" text="+" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Roboto" size="35.0" />
          </font>

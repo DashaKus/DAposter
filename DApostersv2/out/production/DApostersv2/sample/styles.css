@@ -5,3 +5,8 @@
 .button :hover {
 -fx-text-fill: #18D8C9 ;
 }
+.custom-dashed-border {
+    -fx-border-color: #ffffff ;
+    -fx-border-width: 3 ;
+    -fx-border-style: segments(7, 7, 7, 7) ;
+}

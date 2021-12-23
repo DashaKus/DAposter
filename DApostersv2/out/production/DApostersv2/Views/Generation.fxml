@@ -14,11 +14,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-            prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #693963;"
-            xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="Controllers.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #693963;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.GenerationController">
    <children>
       <Label layoutX="67.0" layoutY="34.0" text="DAposter" textFill="WHITE" wrapText="true">
          <font>
@@ -30,7 +26,7 @@
             <Font name="Roboto" size="24.0" />
          </font>
       </Label>
-      <Button fx:id="exit_the_program" layoutX="914.0" layoutY="641.0" mnemonicParsing="false" onAction="#exit_the_program" prefHeight="44.0" prefWidth="80.0" style="-fx-background-radius: 10px; -fx-background-color: #693963;" text="Exit" textFill="#dc624a">
+      <Button fx:id="exit_the_program" layoutX="914.0" layoutY="641.0" mnemonicParsing="false" onAction="#exit_the_program" prefHeight="44.0" prefWidth="80.0" style="-fx-background-radius: 10px; -fx-background-color: #693963;" stylesheets="@../sample/styles.css" text="Exit" textFill="#dc624a">
          <font>
             <Font name="Roboto" size="24.0" />
          </font>
@@ -45,6 +41,21 @@
             <CheckBox fx:id="chek_text_align" layoutX="150.0" layoutY="119.0" mnemonicParsing="false" />
             <CheckBox fx:id="chek_text_align" layoutX="92.0" layoutY="119.0" mnemonicParsing="false" />
             <CheckBox fx:id="chek_text_align" layoutX="33.0" layoutY="119.0" mnemonicParsing="false" />
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="19.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Textalign1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="80.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Textalign2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="138.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Textalign3.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
       <AnchorPane layoutX="75.0" layoutY="328.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: C4C4C4; -fx-background-radius: 15px;">
@@ -57,6 +68,21 @@
             <CheckBox fx:id="chek_text_shape" layoutX="29.0" layoutY="117.0" mnemonicParsing="false" />
             <CheckBox fx:id="chek_text_shape" layoutX="92.0" layoutY="117.0" mnemonicParsing="false" />
             <CheckBox fx:id="chek_text_shape" layoutX="148.0" layoutY="117.0" mnemonicParsing="false" />
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="17.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Textshape1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="80.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Textshape3.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="136.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Textshape2.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
       <AnchorPane layoutX="75.0" layoutY="514.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: C4C4C4; -fx-background-radius: 15px;">
@@ -69,6 +95,31 @@
             <CheckBox fx:id="chek_text_placement" layoutX="28.0" layoutY="119.0" mnemonicParsing="false" />
             <CheckBox fx:id="chek_text_placement" layoutX="92.0" layoutY="119.0" mnemonicParsing="false" />
             <CheckBox fx:id="chek_text_placement" layoutX="149.0" layoutY="119.0" mnemonicParsing="false" />
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="80.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Textshape3.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="137.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Rectangle27.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="16.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Rectangle27.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="9.0" fitWidth="27.0" layoutX="144.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Line10.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="9.0" fitWidth="27.0" layoutX="23.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Line10.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
       <AnchorPane layoutX="325.0" layoutY="141.0" prefHeight="338.0" prefWidth="350.0" style="-fx-background-color: C4C4C4; -fx-background-radius: 15px;">
@@ -105,13 +156,13 @@
                   <Font size="14.0" />
                </font>
             </TextField>
-            <Button layoutX="12.0" layoutY="319.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="178.0" style="-fx-background-radius: 15px;" text="+Add word" textFill="#a95177">
+            <Button layoutX="12.0" layoutY="319.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="178.0" style="-fx-background-radius: 15px;" stylesheets="@../sample/styles.css" text="+Add word" textFill="#a95177">
                <font>
                   <Font name="Roboto" size="12.0" />
                </font>
             </Button>
          </children></AnchorPane>
-      <Button fx:id="generate" layoutX="734.0" layoutY="541.0" mnemonicParsing="false" onAction="#switch_to_Viewing" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: A95177; -fx-background-radius: 15px;" text="Generate" textFill="WHITE">
+      <Button fx:id="generate" layoutX="734.0" layoutY="541.0" mnemonicParsing="false" onAction="#switch_to_Viewing" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: A95177; -fx-background-radius: 15px;" stylesheets="@../sample/styles.css" text="Generate" textFill="WHITE">
          <font>
             <Font name="Roboto" size="18.0" />
          </font>

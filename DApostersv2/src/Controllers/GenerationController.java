@@ -3,6 +3,8 @@ package Controllers;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.geometry.Insets;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -11,17 +13,20 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Region;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class GenerationController {
+public class GenerationController implements Initializable  {
 
     private Stage stage;
     private Scene scene;
     private Parent root;
-    int column =2;
-    int row=1;
+    int row=0;
+
     @FXML
     private CheckBox background_color_chek;
 
@@ -53,6 +58,13 @@ public class GenerationController {
     private GridPane word_gride;
 
     @FXML
+    private TextField main_word;
+
+    @FXML
+    private TextField name_word;
+
+
+    @FXML
     public void exit_the_program(javafx.event.ActionEvent event) throws IOException {
         System.exit(0);
     }
@@ -67,10 +79,23 @@ public class GenerationController {
     }
 
     public void add_words(javafx.event.ActionEvent event) throws IOException{
+       /* if(row==0){
+            word_gride.add(name_word,0,row++);
+            word_gride.add(main_word,0,row++);
+        }*/
         TextField new_words= new TextField();
-        new_words.setPrefSize(178,30);
-        word_gride.add(new_words,column,row);
-        row++;
+        new_words.setPrefSize(178,40);
+        word_gride.setMinWidth(Region.USE_COMPUTED_SIZE);
+        word_gride.setPrefWidth(Region.USE_COMPUTED_SIZE);
+        word_gride.setMaxWidth(Region.USE_PREF_SIZE);
+        word_gride.add(new_words,0,row++);
+        word_gride.setMargin(new_words,new Insets(1));
+
     }
 
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        word_gride.add(name_word,0,row++);
+        word_gride.add(main_word,0,row++);
+    }
 }

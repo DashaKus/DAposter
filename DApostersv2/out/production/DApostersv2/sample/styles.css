@@ -9,4 +9,10 @@
     -fx-border-color: #ffffff ;
     -fx-border-width: 3 ;
     -fx-border-style: segments(7, 7, 7, 7) ;
+    -fx-font-size:28px;
+    -fx-background-color: #a95177;
+    -fx-text-fill:#ffffff ;
+}
+.scroll-pane2> .viewport{
+    -fx-background-color:  C4C4C4;
 }

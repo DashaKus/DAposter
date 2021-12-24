@@ -41,7 +41,7 @@ public class AvtorisaionController {
 
     @FXML
     void switch_to_Library(javafx.event.ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("../Views/Library.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/Views/Library.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -50,7 +50,7 @@ public class AvtorisaionController {
 
     @FXML
     void switch_to_Registration(javafx.event.ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("../Views/Registration.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/Views/Registration.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);

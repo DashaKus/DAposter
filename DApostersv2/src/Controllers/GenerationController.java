@@ -8,6 +8,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.ColorPicker;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -17,6 +20,8 @@ public class GenerationController {
     private Stage stage;
     private Scene scene;
     private Parent root;
+    int column =2;
+    int row=1;
     @FXML
     private CheckBox background_color_chek;
 
@@ -42,8 +47,13 @@ public class GenerationController {
     private Button generate;
 
     @FXML
-    public void exit_the_program(javafx.event.ActionEvent event) throws IOException {
+    private ColorPicker choose_color;
 
+    @FXML
+    private GridPane word_gride;
+
+    @FXML
+    public void exit_the_program(javafx.event.ActionEvent event) throws IOException {
         System.exit(0);
     }
 
@@ -55,4 +65,12 @@ public class GenerationController {
         stage.setScene(scene);
         stage.show();
     }
+
+    public void add_words(javafx.event.ActionEvent event) throws IOException{
+        TextField new_words= new TextField();
+        new_words.setPrefSize(178,30);
+        word_gride.add(new_words,column,row);
+        row++;
+    }
+
 }

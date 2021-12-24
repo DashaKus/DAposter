@@ -9,10 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-            prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #693963;"
-            styleClass="button" stylesheets="@../sample/styles.css" xmlns="http://javafx.com/javafx/17"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #693963;" styleClass="button" stylesheets="@../sample/styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AvtorisaionController">
    <children>
       <Label layoutX="370.0" layoutY="70.0" text="DAposter" textFill="WHITE">
          <font>
@@ -21,7 +18,7 @@
       </Label>
       <AnchorPane layoutX="305.0" layoutY="173.0" prefHeight="463.0" prefWidth="391.0" style="-fx-background-color: C4C4C4; -fx-background-radius: 20px;">
          <children>
-                       <Text fill="#392048" layoutX="41.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter login:">
+            <Text fill="#392048" layoutX="41.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter login:">
                <font>
                   <Font name="Risque-Regular" size="24.0" />
                </font>
@@ -63,7 +60,15 @@
             <TextField fx:id="user_login" layoutX="41.0" layoutY="100.0" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: A95177; -fx-background-radius: 10px;">
                <cursor>
                   <Cursor fx:constant="TEXT" />
-               </cursor></TextField>
+               </cursor>
+               <font>
+                  <Font name="Roboto" size="24.0" />
+               </font></TextField>
+            <Label id="is_not_correct" fx:id="is_not_correct" layoutX="17.0" layoutY="14.0" prefHeight="50.0" prefWidth="366.0">
+               <font>
+                  <Font name="Cambria Bold" size="22.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
       <Button fx:id="exit_the_program" layoutX="906.0" layoutY="641.0" mnemonicParsing="false" onAction="#exit_the_program" prefHeight="44.0" prefWidth="80.0" style="-fx-background-radius: 10px; -fx-background-color: #693963;" stylesheets="@../sample/styles.css" text="Exit" textFill="#dc624a">
@@ -74,5 +79,6 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <Label text="Label" />
    </children>
 </AnchorPane>

@@ -1,9 +1,9 @@
-.scroll-pane > .viewport{
--fx-background-color:  #a95177;
--fx-background-radius: 50 px;
+.scr
 }
 .button :hover {
--fx-text-fill: #18D8C9 ;
+    -fx-text-fill: #18D8C9 ;oll-pane > .viewport{
+-fx-background-color:  #a95177;
+-fx-background-radius: 50 px;
 }
 .custom-dashed-border {
     -fx-border-color: #ffffff ;

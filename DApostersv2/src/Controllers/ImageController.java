@@ -21,6 +21,7 @@ public class ImageController {
     private ImageView poster;
 
     private Show_poster posters;
+
     public void switch_to_Generation(javafx.event.ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("../Views/Generation.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();

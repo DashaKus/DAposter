@@ -127,15 +127,6 @@ public class LibraryController implements Initializable {
                 GridPane.setMargin(anchorPane,new Insets(10));
             }
             if (column1==3){ column1 = 0; row1++;}
-            //Button pluse = new Button("+");
-           // pluse.setPrefSize(80,100);
-            /*pluse.setStyle("-fx-border-color: #ffffff ;"+
-            "-fx-border-width: 3 ;"+
-            "-fx-border-style: segments(7, 7, 7, 7) ;"+
-            "-fx-font-size:28px;"+
-            "-fx-background-color: #a95177;"+
-            "-fx-text-fill:#ffffff ;");*/
-             //pluse.setOnAction(switch_to_Generation(MouseEvent.MOUSE_CLICKED));
             my_grid.add(toGenerate,column1,row1);
         }catch (IOException e) {
             e.printStackTrace();

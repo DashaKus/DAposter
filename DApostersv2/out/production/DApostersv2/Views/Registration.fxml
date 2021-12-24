@@ -32,7 +32,7 @@
                   <Font name="Risque-Regular" size="24.0" />
                </font>
             </Text>
-            <Button fx:id="sing_up" layoutX="96.0" layoutY="361.0" mnemonicParsing="false" onAction="#switch_to_Library" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: bfbfbf; -fx-background-radius: 15px;" text="Sign up" textAlignment="CENTER" textFill="#b23066">
+            <Button fx:id="sing_up" layoutX="96.0" layoutY="361.0" mnemonicParsing="false" onAction="#switch_to_Library" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: bfbfbf; -fx-background-radius: 15px;" stylesheets="@../sample/styles.css" text="Sign up" textAlignment="CENTER" textFill="#b23066">
                <font>
                   <Font name="Risque-Regular" size="24.0" />
                </font>

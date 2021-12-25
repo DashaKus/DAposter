@@ -20,7 +20,13 @@ def overlay(background, img, x, y):
     return b
 
 
-def writing_text(image, text, x, y):
+def writing_text(image, text, place):
+    if place == 'top':
+        x, y = 10, 70
+    elif place == 'middle':
+        x, y = 10, 200
+    elif place == 'down':
+        x, y = 10, 370
     font = cv2.FONT_ITALIC
     cv2.putText(image, text, (x, y), font, 3, (255, 255, 255), 2, cv2.LINE_AA)
     return image
@@ -43,7 +49,7 @@ with open("parameters/other_pictures.txt") as file:
     str1 = str1.split()
     j = 0
     for i in str1:
-        num = random.randint(1, 20)
+        num = random.randint(1, 117)
         num = str(num)
         path = 'other_pictures/' + i + num + '.png'
         print(path)
@@ -59,14 +65,17 @@ num = str(num)
 path = 'central_pictures/Mario (' + num + ').png'
 print(path)
 picture = cv2.imread(path, cv2.IMREAD_UNCHANGED)
-picture = resize(picture, 250, 200)
+picture = resize(picture, 150, 100)
 
 
-final_image = overlay(final_image, picture, 200, 150)
+final_image = overlay(final_image, picture, 170, 150)
 cv2.imwrite("final_image/merged_transparent.png", final_image)
 
-font = cv2.FONT_HERSHEY_SIMPLEX
-final_image = writing_text(final_image, 'DAposter', 10, 100)
-cv2.imwrite("final_image/merged_transparent.png", final_image)
-cv2.imshow("Image", final_image)
-cv2.waitKey(0)
+with open("parameters/text.txt") as file:
+    place_of_text = file.readline()
+    final_image = writing_text(final_image, 'DAposter', place_of_text)
+    cv2.imwrite("final_image/merged_transparent.png", final_image)
+    cv2.imshow("Image", final_image)
+    cv2.waitKey(0)
+    file.close()
+

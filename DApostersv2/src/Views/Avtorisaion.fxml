@@ -28,7 +28,7 @@
                   <Font name="Risque-Regular" size="24.0" />
                </font>
             </Text>
-            <PasswordField fx:id="user_password" layoutX="41.0" layoutY="207.0" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: A95177; -fx-background-radius: 10px;">
+            <PasswordField fx:id="user_password" layoutX="41.0" layoutY="219.0" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: A95177; -fx-background-radius: 10px;">
                <font>
                   <Font name="Roboto" size="24.0" />
                </font>
@@ -64,6 +64,11 @@
                <font>
                   <Font name="Roboto" size="24.0" />
                </font></TextField>
+            <Label id="is_not_correct" fx:id="is_not_correct" layoutX="42.0" layoutY="14.0" prefHeight="50.0" prefWidth="316.0" textFill="#d36464">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
       <Button fx:id="exit_the_program" layoutX="906.0" layoutY="641.0" mnemonicParsing="false" onAction="#exit_the_program" prefHeight="44.0" prefWidth="80.0" style="-fx-background-radius: 10px; -fx-background-color: #693963;" stylesheets="@../sample/styles.css" text="Exit" textFill="#dc624a">

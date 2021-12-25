@@ -1,6 +1,7 @@
 package Controllers;
 
 import Logic.Show_poster;
+import Logic.User;
 import com.sun.javafx.scene.control.ContextMenuContent;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -12,6 +13,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Region;
 import javafx.stage.Stage;
@@ -30,6 +32,8 @@ public class LibraryController implements Initializable {
     private Scene scene;
     private Parent root;
 
+
+
     private List<Show_poster> my_posters= new ArrayList<>();
     private List<Show_poster> lib_posters= new ArrayList<>();
 
@@ -45,6 +49,8 @@ public class LibraryController implements Initializable {
     @FXML
     private ScrollPane my_scroll;
 
+    @FXML
+    private Label user_name;
 
     @FXML
     private Button exit_the_program;
@@ -67,12 +73,12 @@ public class LibraryController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
-    private List<Show_poster> getData(){
+    private List<Show_poster> getData(String SRC){
         List<Show_poster> posters= new ArrayList<>();
         Show_poster poster;
         for (int i=1 ; i<20; i++){
             poster = new Show_poster();
-            poster.setImgSrc("/image/add new poster.png");
+            poster.setImgSrc("SRC");
             posters.add(poster);
         }
         return posters;
@@ -80,8 +86,8 @@ public class LibraryController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        my_posters.addAll(getData());
-        lib_posters.addAll(getData());
+        my_posters.addAll(getData(User.getUser_LibSRC()));
+        lib_posters.addAll(getData("/Info/common_lib.txt"));
         int column1 =0;
         int row1=1;
         int column2 =0;
@@ -128,6 +134,7 @@ public class LibraryController implements Initializable {
             }
             if (column1==3){ column1 = 0; row1++;}
             my_grid.add(toGenerate,column1,row1);
+            user_name.setText(User.getUser_Name());
         }catch (IOException e) {
             e.printStackTrace();
         }

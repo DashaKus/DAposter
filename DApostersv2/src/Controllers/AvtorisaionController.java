@@ -1,5 +1,6 @@
 package Controllers;
 
+import Logic.User;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -7,11 +8,17 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.NoSuchElementException;
+import java.util.Scanner;
 
 public class AvtorisaionController {
 
@@ -19,11 +26,20 @@ public class AvtorisaionController {
     private Scene scene;
     private Parent root;
 
+    User user = new User();
+    String login;
+    String password;
+
+
+
     @FXML
     private Button exit_the_program;
 
     @FXML
     private Button registration;
+
+    @FXML
+    private Label is_not_correct;
 
     @FXML
     private Button sign_in;
@@ -41,11 +57,21 @@ public class AvtorisaionController {
 
     @FXML
     void switch_to_Library(javafx.event.ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/Views/Library.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        login = user_login.getText();
+        password = user_password.getText();
+
+        int sum=0;
+        sum=user.correctinfo(login, password);
+        System.out.println(sum);
+        if (sum != 0) {
+            Parent root = FXMLLoader.load(getClass().getResource("../Views/Library.fxml"));
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } else {
+            is_not_correct.setText("Your login or password is wrong!");
+        }
     }
 
     @FXML

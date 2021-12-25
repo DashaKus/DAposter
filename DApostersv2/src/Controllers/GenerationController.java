@@ -1,5 +1,6 @@
 package Controllers;
 
+import Logic.User;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -8,10 +9,7 @@ import javafx.geometry.Insets;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.ColorPicker;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Region;
 import javafx.stage.Stage;
@@ -26,6 +24,7 @@ public class GenerationController implements Initializable  {
     private Scene scene;
     private Parent root;
     int row=0;
+
 
     @FXML
     private CheckBox background_color_chek;
@@ -63,6 +62,9 @@ public class GenerationController implements Initializable  {
     @FXML
     private TextField name_word;
 
+    @FXML
+    private Label user_name;
+
 
     @FXML
     public void exit_the_program(javafx.event.ActionEvent event) throws IOException {
@@ -79,10 +81,6 @@ public class GenerationController implements Initializable  {
     }
 
     public void add_words(javafx.event.ActionEvent event) throws IOException{
-       /* if(row==0){
-            word_gride.add(name_word,0,row++);
-            word_gride.add(main_word,0,row++);
-        }*/
         TextField new_words= new TextField();
         new_words.setPrefSize(178,40);
         word_gride.setMinWidth(Region.USE_COMPUTED_SIZE);
@@ -97,5 +95,6 @@ public class GenerationController implements Initializable  {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         word_gride.add(name_word,0,row++);
         word_gride.add(main_word,0,row++);
+        user_name.setText(User.getUser_Name());
     }
 }

@@ -1,0 +1,12 @@
+.scroll-pane > .viewport{
+-fx-background-color:  #a95177;
+-fx-background-radius: 50 px;
+}
+.button :hover {
+-fx-text-fill: #18D8C9 ;
+}
+.custom-dashed-border {
+    -fx-border-color: #ffffff ;
+    -fx-border-width: 3 ;
+    -fx-border-style: segments(7, 7, 7, 7) ;
+}

@@ -1,0 +1,12 @@
+.scr
+}
+.button :hover {
+    -fx-text-fill: #18D8C9 ;oll-pane > .viewport{
+-fx-background-color:  #a95177;
+-fx-background-radius: 50 px;
+}
+.custom-dashed-border {
+    -fx-border-color: #ffffff ;
+    -fx-border-width: 3 ;
+    -fx-border-style: segments(7, 7, 7, 7) ;
+}

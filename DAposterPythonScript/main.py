@@ -1,3 +1,5 @@
+import random
+
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -19,23 +21,42 @@ def overlay(background, img, x, y):
     return b
 
 
-background = cv2.imread('background/fon.png')
+def writing_text(image, text, x, y):
+    font = cv2.FONT_ITALIC
+    cv2.putText(image, text, (x, y), font, 3, (255, 255, 255), 2, cv2.LINE_AA)
+    return image
+
+x, y = 30, 100
+
+file = f.readline(open("parameters/backgroung.txt", "r"))
+col = file[0]
+path = 'background/' + col + '.png'
+print(path)
+background = cv2.imread(path)
 background = resize(background, WIDTH, HEIGHT)
-plt.imshow(background)
-plt.show()
+
+file = open("parameters/other_pictures", "r")
+print(file)
+for i in range(len(file)):
+    num = random.randint(1, 20)
+    path = 'other_pictures/' + num + '.png'
+    picture = cv2.imread(path, cv2.IMREAD_UNCHANGED)
+    picture = resize(picture, 150, 100)
+    final_image = overlay(background, picture, x, y)
+    cv2.imwrite("final_image/merged_transparent.png", final_image)
 
 picture = cv2.imread('central_picture/dog.png', cv2.IMREAD_UNCHANGED)
 picture = resize(picture, 250, 200)
-plt.imshow(picture)
-plt.show()
 
-final_image = overlay(background, picture, 50, 50)
+final_image = overlay(background, picture, 30, 100)
 cv2.imwrite("final_image/merged_transparent.png", final_image)
-plt.imshow(final_image)
-plt.show()
+
 font = cv2.FONT_HERSHEY_SIMPLEX
-cv2.putText(final_image, 'DAposter', (10, 100), font, 3, (255, 255, 255), 2, cv2.LINE_AA)
+final_image = writing_text(final_image, 'DAposter', 10, 100)
 cv2.imwrite("final_image/merged_transparent.png", final_image)
-plt.imshow(final_image)
-plt.show()
+cv2.imshow("Image", final_image)
+cv2.waitKey(0)
+#plt.imshow(final_image)
+#plt.show()
+
 

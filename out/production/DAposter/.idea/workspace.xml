@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de98b17c-3d10-4294-9b71-33fb4a087aae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../DAposterPythonScript/central_picture/Mario (102).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DAposterPythonScript/central_picture/Mario (105).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DAposterPythonScript/central_picture/Mario (115).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DAposterPythonScript/central_picture/Mario (130).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DAposterPythonScript/central_picture/Mario (18).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DAposterPythonScript/central_picture/Mario (20).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DAposterPythonScript/central_picture/Mario (35).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DAposterPythonScript/central_picture/Mario (39).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DAposterPythonScript/central_picture/Mario (52).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DAposterPythonScript/central_picture/Mario (86).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DAposterPythonScript/central_picture/Mario (87).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DAposterPythonScript/central_picture/Mario (97).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DAposterPythonScript/final_image/merged_transparent.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DAposterPythonScript/final_image/merged_transparent.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../DAposterPythonScript/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DAposterPythonScript/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DAposterPythonScript/parameters/other_pictures.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DAposterPythonScript/parameters/other_pictures.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +25,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="21k6kQ6MfYrNfOrgjJLZrpIevyq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -84,6 +101,7 @@
       <updated>1638472911131</updated>
       <workItem from="1638472921219" duration="105000" />
       <workItem from="1640392817950" duration="14000" />
+      <workItem from="1640420335817" duration="47000" />
     </task>
     <servers />
   </component>

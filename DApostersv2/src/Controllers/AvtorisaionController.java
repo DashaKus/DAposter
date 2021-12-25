@@ -59,7 +59,6 @@ public class AvtorisaionController {
     void switch_to_Library(javafx.event.ActionEvent event) throws IOException {
         login = user_login.getText();
         password = user_password.getText();
-
         int sum=0;
         sum=user.correctinfo(login, password);
         System.out.println(sum);

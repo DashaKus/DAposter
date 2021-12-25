@@ -1,5 +1,7 @@
 package Logic;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.awt.Graphics;
@@ -57,11 +59,23 @@ public class Poster {
         File backround = new File("/image/sample.jpg");
         BufferedImage read = ImageIO.read(backround);
         Graphics text = read.getGraphics();
-        //text.setFont(Roboto);
+        //text.setFont(Robot);
         //text.setColor(main_color);
         text.drawString(Heading,align, placement);
         text.dispose();
         ImageIO.write(read, "jpg", new File("/image/newimage.jpg"));
+        try {
+            FileWriter writer = new FileWriter(User.getUser_LibSRC(), true);
+            BufferedWriter bufferWriter = new BufferedWriter(writer);
+            bufferWriter.write("/image/newimage.jpg");
+            bufferWriter.write("\n");
+            bufferWriter.close();
+        }
+        catch (IOException e) {
+            System.out.println(e);
+        }
     }
 
-}
+    }
+
+

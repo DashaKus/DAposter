@@ -3,9 +3,9 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Accordion?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ColorPicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -41,9 +41,9 @@
                   <Font size="30.0" />
                </font>
             </Text>
-            <CheckBox fx:id="chek_text_align" layoutX="150.0" layoutY="119.0" mnemonicParsing="false" />
-            <CheckBox fx:id="chek_text_align" layoutX="92.0" layoutY="119.0" mnemonicParsing="false" />
-            <CheckBox fx:id="chek_text_align" layoutX="33.0" layoutY="119.0" mnemonicParsing="false" />
+            <RadioButton fx:id="chek_text_align3" layoutX="150.0" layoutY="119.0" mnemonicParsing="false" />
+            <RadioButton fx:id="chek_text_align2" layoutX="92.0" layoutY="119.0" mnemonicParsing="false" />
+            <RadioButton fx:id="chek_text_align1" layoutX="33.0" layoutY="119.0" mnemonicParsing="false" />
             <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="19.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../image/Textalign1.png" />
@@ -68,9 +68,9 @@
                   <Font size="30.0" />
                </font>
             </Text>
-            <CheckBox fx:id="chek_text_shape" layoutX="29.0" layoutY="117.0" mnemonicParsing="false" />
-            <CheckBox fx:id="chek_text_shape" layoutX="92.0" layoutY="117.0" mnemonicParsing="false" />
-            <CheckBox fx:id="chek_text_shape" layoutX="148.0" layoutY="117.0" mnemonicParsing="false" />
+            <RadioButton fx:id="chek_text_shape1" layoutX="29.0" layoutY="117.0" mnemonicParsing="false" />
+            <RadioButton fx:id="chek_text_shape2" layoutX="92.0" layoutY="117.0" mnemonicParsing="false" />
+            <RadioButton fx:id="chek_text_shape3" layoutX="148.0" layoutY="117.0" mnemonicParsing="false" />
             <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="17.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../image/Textshape1.png" />
@@ -95,9 +95,9 @@
                   <Font size="25.0" />
                </font>
             </Text>
-            <CheckBox fx:id="chek_text_placement" layoutX="28.0" layoutY="119.0" mnemonicParsing="false" />
-            <CheckBox fx:id="chek_text_placement" layoutX="92.0" layoutY="119.0" mnemonicParsing="false" />
-            <CheckBox fx:id="chek_text_placement" layoutX="149.0" layoutY="119.0" mnemonicParsing="false" />
+            <RadioButton fx:id="chek_text_placement1" layoutX="28.0" layoutY="119.0" mnemonicParsing="false" />
+            <RadioButton fx:id="chek_text_placement2" layoutX="92.0" layoutY="119.0" mnemonicParsing="false" />
+            <RadioButton fx:id="chek_text_placement3" layoutX="149.0" layoutY="119.0" mnemonicParsing="false" />
             <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="80.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../image/Textshape3.png" />
@@ -135,11 +135,11 @@
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9ba0a4" height="100.0" layoutX="33.0" layoutY="72.0" stroke="TRANSPARENT" strokeType="INSIDE" width="80.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9ba0a4" height="100.0" layoutX="135.0" layoutY="72.0" stroke="TRANSPARENT" strokeType="INSIDE" width="80.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9ba0a4" height="100.0" layoutX="240.0" layoutY="72.0" stroke="TRANSPARENT" strokeType="INSIDE" width="80.0" />
-            <CheckBox fx:id="background_color_chek" layoutX="65.0" layoutY="187.0" mnemonicParsing="false" />
-            <CheckBox fx:id="background_color_chek" layoutX="167.0" layoutY="187.0" mnemonicParsing="false" />
-            <CheckBox fx:id="background_color_chek" layoutX="272.0" layoutY="187.0" mnemonicParsing="false" />
+            <RadioButton fx:id="background_color_chek1" layoutX="65.0" layoutY="187.0" mnemonicParsing="false" />
+            <RadioButton fx:id="background_color_chek2" layoutX="167.0" layoutY="187.0" mnemonicParsing="false" />
+            <RadioButton fx:id="background_color_chek3" layoutX="272.0" layoutY="187.0" mnemonicParsing="false" />
             <ColorPicker fx:id="choose_color" layoutX="137.0" layoutY="243.0" prefHeight="29.0" prefWidth="175.0" />
-            <CheckBox fx:id="background_color_chek" layoutX="69.0" layoutY="249.0" mnemonicParsing="false" />
+            <RadioButton fx:id="background_color_chek4" layoutX="69.0" layoutY="249.0" mnemonicParsing="false" />
          </children>
       </AnchorPane>
       <AnchorPane layoutX="734.0" layoutY="142.0" prefHeight="363.0" prefWidth="200.0" style="-fx-background-color: C4C4C4; -fx-background-radius: 15px;">
@@ -176,26 +176,26 @@
                   <Font size="25.0" />
                </font>
             </Text>
-            <CheckBox fx:id="chek_text_placement" layoutX="31.0" layoutY="58.0" mnemonicParsing="false" text="format A4 (297 x 210 мм)" textFill="#a95177">
+            <RadioButton layoutX="31.0" layoutY="58.0" mnemonicParsing="false" text="format A4 (297 x 210 мм)" textFill="#a95177">
                <font>
                   <Font name="Roboto" size="12.0" />
                </font>
-            </CheckBox>
-            <CheckBox fx:id="chek_text_placement" layoutX="33.0" layoutY="103.0" mnemonicParsing="false" text="format A3(420 x 297 мм)" textFill="#a95177">
+            </RadioButton>
+            <RadioButton fx:id="chek_text_placement" layoutX="33.0" layoutY="103.0" mnemonicParsing="false" text="format A3(420 x 297 мм)" textFill="#a95177">
                <font>
                   <Font name="Roboto" size="12.0" />
                </font>
-            </CheckBox>
-            <CheckBox fx:id="chek_text_placement1" layoutX="194.0" layoutY="58.0" mnemonicParsing="false" text="format A2(594 x 420 мм) " textFill="#a95177">
+            </RadioButton>
+            <RadioButton fx:id="chek_text_placement1" layoutX="194.0" layoutY="58.0" mnemonicParsing="false" text="format A2(594 x 420 мм) " textFill="#a95177">
                <font>
                   <Font name="Roboto" size="12.0" />
                </font>
-            </CheckBox>
-            <CheckBox fx:id="chek_text_placement11" layoutX="194.0" layoutY="103.0" mnemonicParsing="false" text="square(210 x 210 мм)" textFill="#a95177" />
+            </RadioButton>
+            <RadioButton fx:id="chek_text_placement11" layoutX="194.0" layoutY="103.0" mnemonicParsing="false" text="square(210 x 210 мм)" textFill="#a95177" />
          </children>
       </AnchorPane>
       <Accordion />
-      <TextField fx:id="main_word" layoutX="449.0" layoutY="50.0" prefHeight="33.0" prefWidth="178.0" promptText="main word">
+      <TextField fx:id="main_word" layoutX="449.0" layoutY="50.0" prefHeight="25.0" prefWidth="178.0" promptText="main word">
          <font>
             <Font size="14.0" />
          </font>
@@ -203,7 +203,7 @@
             <Insets bottom="15.0" />
          </padding>
       </TextField>
-      <TextField fx:id="name_word" layoutX="568.0" layoutY="94.0" prefHeight="30.0" prefWidth="178.0" promptText="Name" style="-fx-background-color: 92d0d0;">
+      <TextField fx:id="name_word" layoutX="568.0" layoutY="94.0" prefHeight="17.0" prefWidth="178.0" promptText="Name" style="-fx-background-color: 92d0d0;">
          <font>
             <Font name="Roboto" size="14.0" />
          </font>
@@ -211,6 +211,11 @@
             <Insets bottom="15.0" />
          </padding>
       </TextField>
+      <Label fx:id="user_name" layoutX="884.0" layoutY="59.0" text="name" textFill="WHITE">
+         <font>
+            <Font name="Roboto" size="24.0" />
+         </font>
+      </Label>
    </children>
    <opaqueInsets>
       <Insets />

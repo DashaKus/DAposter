@@ -11,6 +11,7 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
 
 public class ImageController {
 
@@ -30,9 +31,9 @@ public class ImageController {
         stage.show();
     }
 
-    public void setData(Show_poster posters){
+    public void setData(Show_poster posters) throws URISyntaxException {
         this.posters= posters;
-        Image image = new Image(getClass().getResourceAsStream(posters.getImgSrc()));
+        Image image = new Image(getClass().getResourceAsStream(posters.getImgSrc()),80,100,false,false);
         poster.setImage(image);
     }
 

@@ -21,11 +21,15 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.GridPane;
 
 import java.awt.event.MouseEvent;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
+import java.util.Scanner;
 
 public class LibraryController implements Initializable {
     private Stage stage;
@@ -73,31 +77,33 @@ public class LibraryController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
-    private List<Show_poster> getData(String SRC){
+    private List<Show_poster> getData(String SRC) throws FileNotFoundException {
         List<Show_poster> posters= new ArrayList<>();
+        File file = new File(SRC);
+        Scanner scanner1 = new Scanner(file);
         Show_poster poster;
-        for (int i=1 ; i<20; i++){
+        while (scanner1.hasNextLine()) {
             poster = new Show_poster();
-            poster.setImgSrc("SRC");
+            String line = scanner1.nextLine();
+           // String line= "/image/sample.jpg";
+            poster.setImgSrc(line);
             posters.add(poster);
         }
         return posters;
     }
 
     @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        my_posters.addAll(getData(User.getUser_LibSRC()));
-        lib_posters.addAll(getData("/Info/common_lib.txt"));
-        int column1 =0;
-        int row1=1;
-        int column2 =0;
-        int row2=1;
-        try {
+    public void initialize(URL url, ResourceBundle resourceBundle)  {
+        try {my_posters.addAll(getData(User.getUser_LibSRC()));
+            lib_posters.addAll(getData("src/Info/common_lib.txt"));
+            int column1 =0;
+            int row1=1;
+            int column2 =0;
+            int row2=1;
        for(int i=0; i< my_posters.size();i++) {
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(getClass().getResource("/Views/Image.fxml"));
             AnchorPane anchorPane = fxmlLoader.load();
-
             ImageController imageController = fxmlLoader.getController();
             imageController.setData( my_posters.get(i));
             if (column1==3){ column1 = 0; row1++;}
@@ -130,12 +136,11 @@ public class LibraryController implements Initializable {
                 lib_grid.setMaxHeight(Region.USE_PREF_SIZE);
 
                 lib_grid.add(anchorPane,column2++,row2);
-                GridPane.setMargin(anchorPane,new Insets(10));
-            }
+                GridPane.setMargin(anchorPane,new Insets(10));}
             if (column1==3){ column1 = 0; row1++;}
             my_grid.add(toGenerate,column1,row1);
             user_name.setText(User.getUser_Name());
-        }catch (IOException e) {
+        }catch (IOException | URISyntaxException e) {
             e.printStackTrace();
         }
         }
